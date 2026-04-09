@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!--el proposito de esta parte es solicitar al usuario algunos datos en casos que necesiten algun tipo de información en especifico-->
+
+  <body>
+    <header>
+      <div>
+        <nav id="menu-principal">
+          <!--Navegacion-->
+          <a href="index.html">Inicio</a>
+          <a href="sobre-ias.html">Sobre el IAS</a>
+          <a href="servicios.html">funciones</a>
+          <a href="contactos.html">Contacto</a>
+        </nav>
+      </div>
+      <title>Instituto de Asistencia Social - IAS</title>
+      <sub-title>Organismo de Contol de Juegos de Azar-Formosa</sub-title>
+    </header>
+
+    <main>
+      <h2>Contacto</h2>
+      <section>
+        <ul>
+          Dirección:
+          <a><addres>Belgrano 798, Formosa, 3600 Formosa</addres></a>
+        </ul>
+        <ul>
+          Teléfono:
+          <a>3704935202</a>
+        </ul>
+        <ul>
+          Correo electrónico:
+          <a><href>IAS@gmail.com</href></a>
+        </ul>
+      </section>
+      <!--este formulario sirve para que el usurio ingrese datos y el establecimiento le pueda comunicar aquella información que necesite-->
+      <form>
+        <!-- Campo Nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+        <br /><br />
+
+        <!-- Campo Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br /><br />
+
+        <!-- Campo Teléfono -->
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required />
+        <br /><br />
+
+        <!-- Campo Motivo de consulta -->
+        <label for="motivo">Motivo de consulta:</label>
+        <select id="motivo" name="motivo" required>
+          <option value="">Seleccione una opción</option>
+          <option value="informacion">Solicitud de información</option>
+          <option value="soporte">Soporte técnico</option>
+          <option value="otros">Otros</option>
+        </select>
+        <br /><br />
+
+        <!-- Campo Mensaje -->
+        <label for="mensaje">Mensaje:</label>
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          rows="5"
+          cols="40"
+          required
+        ></textarea>
+        <br /><br />
+
+        <!-- Botón de envío -->
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+
+    <div id="section-figure">
+      <figure>
+        <img
+          src="asset/img/Captura de pantalla 2026-04-06 121631.png"
+          alt="UBICACIÓN DEL IAS"
+        />
+      </figure>
+      <figcaption>UBICACIÓN DEL IAS</figcaption>
+    </div>
+
+    <footer>
+      <!--Pie de Pagina-->
+      <p>&copy copyright IAS 2026</p>
+    </footer>
+  </body>
+</html>

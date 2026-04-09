@@ -1,0 +1,103 @@
+body {
+  font-weight: bold;
+  background-color: rgb(130, 202, 81);
+  color: black;
+}
+
+* {
+  background-color: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: black;
+  font-weight: bold;
+}
+
+p {
+  line-height: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: darkgreen;
+  text-align: center;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+}
+
+h1,
+h2 {
+  border: 1px solid black;
+  background-color: darkgreen;
+  padding: 5px;
+}
+
+main {
+  /* border: 2px solid red; */
+  width: 100%;
+  margin: 20px auto;
+  min-height: 78vh;
+
+  box-shadow: 0 0 100px none;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: darkgreen;
+  color: black;
+  font-weight: bold;
+}
+
+#menu-principal {
+  background-color: darkgreen;
+  border-top: 1px solid rgb(3, 63, 3);
+  font-size: 16px;
+  padding: 10px 0px 10px;
+}
+
+#menu-principal a:hover {
+  color: black;
+  background-color: rgb(3, 63, 3);
+  border-bottom: 3px solid rgb(3, 63, 3);
+  transition: 0.3s all;
+}
+
+aside {
+  background-color: chartreuse;
+  text-decoration: overline;
+}
+
+#section-figure {
+  text-align: center;
+}
+
+#section-sobre-ias {
+  background-color: darkgreen;
+  border-top: 1px solid rgb(3, 63, 3);
+  font-size: 16px;
+  padding: 10px 0px 10px;
+}
+
+table {
+  width: 60%;
+  text-align: center;
+  margin-left: 275px;
+}
+
+th,
+td {
+  border: 2px solid;
+  background-color: white;
+}
