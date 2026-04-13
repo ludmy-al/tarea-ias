@@ -7,15 +7,18 @@
   </head>
   <!--el proposito de esta parte es solicitar al usuario algunos datos en casos que necesiten algun tipo de información en especifico-->
 
+  <div class="container">
   <body>
     <header>
       <div>
         <nav id="menu-principal">
           <!--Navegacion-->
-          <a href="index.html">Inicio</a>
-          <a href="sobre-ias.html">Sobre el IAS</a>
-          <a href="servicios.html">funciones</a>
-          <a href="contactos.html">Contacto</a>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-ias.html">Sobre el IAS</a></li>
+            <li><a href="servicios.html">funciones</a></li>
+            <li><a href="contactos.html">Contacto</a></li>
+          </ul>
         </nav>
       </div>
       <title>Instituto de Asistencia Social - IAS</title>
@@ -25,56 +28,49 @@
     <main>
       <h2>Contacto</h2>
       <section>
-        <ul>
+        <h3>
           Dirección:
           <a><addres>Belgrano 798, Formosa, 3600 Formosa</addres></a>
-        </ul>
-        <ul>
+        </h3>
+        <h3>
           Teléfono:
           <a>3704935202</a>
-        </ul>
-        <ul>
+        </h3>
+        <h3>
           Correo electrónico:
           <a><href>IAS@gmail.com</href></a>
-        </ul>
+        </h3>
       </section>
       <!--este formulario sirve para que el usurio ingrese datos y el establecimiento le pueda comunicar aquella información que necesite-->
-      <form>
+     
+      <form id="formulario-contacto">
         <!-- Campo Nombre -->
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required />
-        <br /><br />
+        <input type="text" id="nombre" name="nombre">
 
         <!-- Campo Email -->
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        <br /><br />
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo">
 
         <!-- Campo Teléfono -->
         <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" required />
-        <br /><br />
+        <input type="tel" id="telefono" name="telefono">
 
         <!-- Campo Motivo de consulta -->
         <label for="motivo">Motivo de consulta:</label>
-        <select id="motivo" name="motivo" required>
+        <select id="motivo" name="motivo">
           <option value="">Seleccione una opción</option>
           <option value="informacion">Solicitud de información</option>
           <option value="soporte">Soporte técnico</option>
           <option value="otros">Otros</option>
         </select>
-        <br /><br />
 
         <!-- Campo Mensaje -->
         <label for="mensaje">Mensaje:</label>
         <textarea
           id="mensaje"
           name="mensaje"
-          rows="5"
-          cols="40"
-          required
         ></textarea>
-        <br /><br />
 
         <!-- Botón de envío -->
         <button type="submit">Enviar</button>
@@ -96,4 +92,5 @@
       <p>&copy copyright IAS 2026</p>
     </footer>
   </body>
+  </div>
 </html>

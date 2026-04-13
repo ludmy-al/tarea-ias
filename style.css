@@ -1,3 +1,9 @@
+#container{
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+}
+
 body {
   font-weight: bold;
   background-color: rgb(130, 202, 81);
@@ -10,8 +16,8 @@ body {
   padding: 0;
 }
 
-h1,
-h2,
+h1
+h2
 h3 {
   color: black;
   font-weight: bold;
@@ -22,13 +28,18 @@ p {
   text-align: center;
 }
 
-nav {
+nav ul{
   background-color: darkgreen;
   text-align: center;
   padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-a {
+nav li a{
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -42,11 +53,14 @@ h2 {
   padding: 5px;
 }
 
-main {
+main ul{
   /* border: 2px solid red; */
   width: 100%;
   margin: 20px auto;
   min-height: 78vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 
   box-shadow: 0 0 100px none;
   border-radius: 10px;
@@ -58,6 +72,9 @@ footer {
   background-color: darkgreen;
   color: black;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 #menu-principal {
@@ -96,8 +113,30 @@ table {
   margin-left: 275px;
 }
 
-th,
+th
 td {
   border: 2px solid;
   background-color: white;
+}
+
+#formulario-contacto{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 450px;
+  margin: auto;
+}
+
+#formulario-contacto label{
+  width: 50%;
+}
+
+#formulario-contacto input, #formulario-contacto select{
+  width: 100%;
+  padding: 10%;
+}
+
+#formulario-contacto textarea, #formulario-contacto button{
+  width: 100%;
+  padding: 10px;
 }
